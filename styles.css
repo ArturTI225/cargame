@@ -32,7 +32,28 @@ h1, h2 {
     transform: scale(0.95);
 }
 
-.upgrades {
+.menu {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+.menu button:hover {
+    background-color: #45a049;
+}
+
+.menu-content {
     margin-top: 20px;
 }
 
