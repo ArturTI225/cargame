@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Clicker Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Car Clicker Game</h1>
+        <p>Clicks: <span id="click-count">0</span></p>
+        <img src="car.png" alt="Car" id="car" onclick="incrementClickCount()">
+        <div class="upgrades">
+            <h2>Upgrades</h2>
+            <button class="upgrade-btn" onclick="buyUpgrade(1)">
+                <span>Upgrade 1</span>
+                <span>+1 click</span>
+                <span>Cost: <span id="upgrade1-cost">10</span></span>
+            </button>
+            <button class="upgrade-btn" onclick="buyUpgrade(2)">
+                <span>Upgrade 2</span>
+                <span>+5 clicks</span>
+                <span>Cost: <span id="upgrade2-cost">50</span></span>
+            </button>
+            <button class="upgrade-btn" onclick="buyUpgrade(3)">
+                <span>Upgrade 3</span>
+                <span>+10 clicks</span>
+                <span>Cost: <span id="upgrade3-cost">100</span></span>
+            </button>
+        </div>
+        <div class="progress-container">
+            <h2>Progress</h2>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill" style="width: 0;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
