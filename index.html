@@ -10,9 +10,11 @@
     <div class="game-container">
         <h1>Car Clicker Game</h1>
         <p>Clicks: <span id="click-count">0</span></p>
+        <p>Level: <span id="level">1</span></p>
         <div class="menu">
             <button onclick="showEarningsMenu()">Earnings</button>
             <button onclick="showUpgradesMenu()">Upgrades</button>
+            <button onclick="showStatsMenu()">Stats</button>
         </div>
         <div id="earnings-menu" class="menu-content">
             <img src="car.png" alt="Car" id="car" onclick="incrementClickCount()">
@@ -34,6 +36,22 @@
                 <span>+10 clicks</span>
                 <span>Cost: <span id="upgrade3-cost">100</span></span>
             </button>
+            <button class="upgrade-btn" onclick="buyUpgrade(4)">
+                <span>Upgrade 4</span>
+                <span>+10% click</span>
+                <span>Cost: <span id="upgrade4-cost">500</span></span>
+            </button>
+            <button class="upgrade-btn" onclick="buyUpgrade(5)">
+                <span>Upgrade 5</span>
+                <span>+1 minute bonus</span>
+                <span>Cost: <span id="upgrade5-cost">1000</span></span>
+            </button>
+        </div>
+        <div id="stats-menu" class="menu-content" style="display: none;">
+            <h2>Statistics</h2>
+            <p>Total Clicks: <span id="total-clicks">0</span></p>
+            <p>Clicks per Second: <span id="clicks-per-second">0</span></p>
+            <p>Offline Income Rate: <span id="offline-income-rate">1</span> click/minute</p>
         </div>
         <div class="progress-container">
             <h2>Progress</h2>

@@ -15,7 +15,7 @@ body {
     border: 2px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 350px;
 }
 
 h1, h2 {
@@ -99,4 +99,29 @@ h1, h2 {
     background-color: #4caf50;
     width: 0;
     transition: width 0.5s ease;
+}
+.upgrade-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    padding: 15px 25px; /* Увеличили размер кнопок */
+    font-size: 18px; /* Увеличили размер шрифта */
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff8000, #ffbb33); /* Градиентный фон кнопок */
+    border: none;
+    border-radius: 10px; /* Увеличили радиус скругления углов */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавили тень */
+    color: #fff;
+    transition: all 0.3s ease; /* Добавили плавность анимации */
+}
+
+.upgrade-btn:hover {
+    transform: translateY(-3px); /* Добавили небольшое поднятие при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Увеличили размер и тень при наведении */
+}
+
+.upgrade-btn:active {
+    transform: translateY(1px); /* При нажатии кнопка немного опускается */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Уменьшаем размер тени при нажатии */
 }
