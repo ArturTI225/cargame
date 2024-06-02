@@ -10,8 +10,14 @@
     <div class="game-container">
         <h1>Car Clicker Game</h1>
         <p>Clicks: <span id="click-count">0</span></p>
-        <img src="car.png" alt="Car" id="car" onclick="incrementClickCount()">
-        <div class="upgrades">
+        <div class="menu">
+            <button onclick="showEarningsMenu()">Earnings</button>
+            <button onclick="showUpgradesMenu()">Upgrades</button>
+        </div>
+        <div id="earnings-menu" class="menu-content">
+            <img src="car.png" alt="Car" id="car" onclick="incrementClickCount()">
+        </div>
+        <div id="upgrades-menu" class="menu-content" style="display: none;">
             <h2>Upgrades</h2>
             <button class="upgrade-btn" onclick="buyUpgrade(1)">
                 <span>Upgrade 1</span>
